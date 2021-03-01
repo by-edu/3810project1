@@ -4,6 +4,12 @@
 
 -- database creation and use
 
+CREATE DATABASE flowers;
+
+USE flowers;
+
+DROP TABLE IF EXISTS Flowers;
+	-- These are just placeholders above
 -- tables creation satisfying all of the requirements
 
 -- tables population
