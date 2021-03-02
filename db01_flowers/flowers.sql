@@ -11,6 +11,31 @@ USE flowers;
 DROP TABLE IF EXISTS Flowers;
 	-- These are just placeholders above
 -- tables creation satisfying all of the requirements
+DROP TABLE IF EXISTS Zones;
+	-- This is incase Zones already exists
+CREATE TABLE Zones;
+	-- This is a pretty general declaration of Zones, huh?
+    -- Give this thing highestTemperature and lowestTemperature (make sure it can have negative sign)
+	-- Give it ID integer (should be 2 digits), categ varchar(10) or 40 or something
+	-- Then delSize Double I think.
+    
+DROP TABLE IF EXISTS Deliveries;
+
+CREATE TABLE Deliveries;
+	-- (delivery id) id INTEGER, one digit only I think
+    -- (delivery category)categ varchar (5) ONLY 5 CHAR
+    -- (delivery size) delSize double I think, 5 Digit with three decimal, and can be null
+    
+DROP TABLE IF EXISTS FlowersInfo;
+
+CREATE TABLE FlowersInfo;
+	-- (id) id INTEGER, three digits
+    -- (common name) commonName varchar(30)
+    -- (latin name) latinName varchar(35)
+    -- (coolest zone) coolZone varchar()? Nah, INTEGER, must match other tables' id's
+    -- (hottest zone) hotZone varchar()? Nah, INTEGER, must match other tables' id's
+    -- (delivery category) categ varchar(5)?
+    -- (sun needs) sunNeeds varchar(5)
 
 -- tables population
 
