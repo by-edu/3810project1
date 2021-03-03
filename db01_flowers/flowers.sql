@@ -13,7 +13,11 @@ DROP TABLE IF EXISTS Flowers;
 -- tables creation satisfying all of the requirements
 DROP TABLE IF EXISTS Zones;
 	-- This is incase Zones already exists
-CREATE TABLE Zones;
+CREATE TABLE Zones (
+id INTEGER(2),
+highestTemperature INTEGER,
+categ VARCHAR(10),
+delSize DOUBLE);
 	-- This is a pretty general declaration of Zones, huh?
     -- Give this thing highestTemperature and lowestTemperature (make sure it can have negative sign)
 	-- Give it ID integer (should be 2 digits), categ varchar(10) or 40 or something
@@ -21,14 +25,24 @@ CREATE TABLE Zones;
     
 DROP TABLE IF EXISTS Deliveries;
 
-CREATE TABLE Deliveries;
+CREATE TABLE Deliveries(
+id INTEGER(1),
+categ VARCHAR(5),
+delSize DOUBLE);
 	-- (delivery id) id INTEGER, one digit only I think
     -- (delivery category)categ varchar (5) ONLY 5 CHAR
     -- (delivery size) delSize double I think, 5 Digit with three decimal, and can be null
     
 DROP TABLE IF EXISTS FlowersInfo;
 
-CREATE TABLE FlowersInfo;
+CREATE TABLE FlowersInfo(
+id INTEGER(3),
+commonName VARCHAR(30),
+latinName VARCHAR(35),
+coolZone INTEGER,
+hotZone INTEGER,
+categ VARCHAR(5),
+sunNeeds VARCHAR(5));
 	-- (id) id INTEGER, three digits
     -- (common name) commonName varchar(30)
     -- (latin name) latinName varchar(35)
