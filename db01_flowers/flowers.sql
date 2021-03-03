@@ -1,6 +1,6 @@
 -- flowers database
 -- created at: 02/28/2021
--- author(s): Brandon Young, Stuart Griffin
+-- author(s): Brandon Young, Stuart Griffin, Timothy Trusov
 
 -- database creation and use
 
